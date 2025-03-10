@@ -1469,6 +1469,25 @@ a#top {
     -webkit-animation: dash 1s ease-in-out infinite;
     animation: dash 1s ease-in-out infinite;
 }
+
+video {
+    width: 700px;
+}
+
+/* Quando a tela for menor que 768px (exemplo de mobile), ajusta a largura para 400px */
+@media (max-width: 768px) {
+    video {
+        width: 400px;
+    }
+}
+
+/* Para telas ainda menores, pode ajustar mais (opcional) */
+@media (max-width: 480px) {
+    video {
+        width: 100%; /* Para ocupar toda a largura do container */
+    }
+}
+
 .video .video-img .banner-video-icon {
     color: var(--secondary-font-color);
     background-color: var(--extra-bgcolor);
